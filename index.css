@@ -1,0 +1,31 @@
+* {
+  color: #f4f4f4;
+}
+
+.navbar .nav-link.active {
+  color: #E5A01B !important;
+}
+
+.navbar .nav-link.active:hover {
+  color: #dfcca8 !important;
+}
+
+.LandingPage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 5fr;
+      grid-template-columns: 2fr 5fr;
+}
+
+.LandingPage .Description {
+  padding: 10%;
+}
+
+.bg-image {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
+}
+/*# sourceMappingURL=index.css.map */
