@@ -37,7 +37,54 @@
     // .bg-Vector {}
 }
 
-$gallery-height:400px;
+.Explanation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .ExplanationContainer {
+        width: 300px;
+        place-self: center;
+        text-align: center;
+
+        .PlayerIcon {
+            width: 100px;
+        }
+
+        .Title {
+            margin: 1rem 0;
+        }
+
+        .Desc {
+            width: 100%;
+            text-align: justify;
+        }
+    }
+}
+
+.HeroArea {
+    background-image: url("https://blog.roomme.id/wp-content/uploads/2020/08/Meeting-di-kantor-solutions-rent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.Features {
+    .FeaturesContainer {
+        width: 500px;
+        text-align: center;
+
+        .Title {
+            margin-bottom: 1rem;
+        }
+
+        .Desc {
+            text-align: justify;
+        }
+    }
+}
+
+$gallery-height: 40vh;
 $gallery-width: $gallery-height/2;
 
 
@@ -46,7 +93,7 @@ $gallery-width: $gallery-height/2;
 }
 
 .gallery-container {
-    height: $gallery-height * 1.5;
+    height: $gallery-height * 2;
     max-width: $gallery-width * 10;
 
     align-items: center;

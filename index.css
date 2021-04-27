@@ -29,13 +29,60 @@
   background: linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
 }
 
+.Explanation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.Explanation .ExplanationContainer {
+  width: 300px;
+  place-self: center;
+  text-align: center;
+}
+
+.Explanation .ExplanationContainer .PlayerIcon {
+  width: 100px;
+}
+
+.Explanation .ExplanationContainer .Title {
+  margin: 1rem 0;
+}
+
+.Explanation .ExplanationContainer .Desc {
+  width: 100%;
+  text-align: justify;
+}
+
+.HeroArea {
+  background-image: url("https://blog.roomme.id/wp-content/uploads/2020/08/Meeting-di-kantor-solutions-rent.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.Features .FeaturesContainer {
+  width: 500px;
+  text-align: center;
+}
+
+.Features .FeaturesContainer .Title {
+  margin-bottom: 1rem;
+}
+
+.Features .FeaturesContainer .Desc {
+  text-align: justify;
+}
+
 .gallery {
   width: 100%;
 }
 
 .gallery-container {
-  height: 600px;
-  max-width: 2000px;
+  height: 80vh;
+  max-width: 200vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -47,8 +94,8 @@
 }
 
 .gallery-item {
-  height: 300px;
-  width: 150px;
+  height: 30vh;
+  width: 15vh;
   opacity: 0;
   position: absolute;
   -webkit-transition: all 0.3s ease-in-out;
@@ -57,15 +104,15 @@
 }
 
 .gallery-item-3 {
-  height: 600px;
-  width: 300px;
+  height: 60vh;
+  width: 30vh;
   opacity: 1;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 2;
-  -webkit-box-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 16px rgba(255, 255, 255, 0.45), 0 0 40px rgba(255, 255, 255, 0.25), 0 0 80px rgba(255, 255, 255, 0.1);
-          box-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 16px rgba(255, 255, 255, 0.45), 0 0 40px rgba(255, 255, 255, 0.25), 0 0 80px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 0.8vh rgba(255, 255, 255, 0.6), 0 0 1.6vh rgba(255, 255, 255, 0.45), 0 0 4vh rgba(255, 255, 255, 0.25), 0 0 8vh rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 0.8vh rgba(255, 255, 255, 0.6), 0 0 1.6vh rgba(255, 255, 255, 0.45), 0 0 4vh rgba(255, 255, 255, 0.25), 0 0 8vh rgba(255, 255, 255, 0.1);
 }
 
 .gallery-item-1,
@@ -77,8 +124,8 @@
 
 .gallery-item-2,
 .gallery-item-4 {
-  height: 400px;
-  width: 200px;
+  height: 40vh;
+  width: 20vh;
   opacity: 1;
   z-index: 1;
   -webkit-transform: translateX(-50%);
