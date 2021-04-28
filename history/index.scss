@@ -1,10 +1,14 @@
 @import "../Assets/Styles/main";
 
+
 .HeroArea {
+    padding-top: 6rem + 2rem; // 6rem dari navbar
     text-align: center;
     position: relative;
+    height: 40vh;
     padding-bottom: 2rem;
 
+    //garis putih
     &::after {
         content: '';
         width: 200px;
@@ -13,7 +17,28 @@
         border-radius: 3px;
         position: absolute;
         left: 50%;
-        bottom: 0;
+        top: 8rem + 10rem; // 8rem dari paddingnya
         transform: translateX(-50%);
+    }
+}
+
+.HowItHappen {
+    max-width: 900px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 5rem;
+
+    .Title {
+        margin-bottom: 2rem;
+    }
+
+    .PhoneImage {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .Description {
+        max-width: 500px;
+        margin: 0 auto;
     }
 }

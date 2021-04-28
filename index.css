@@ -111,6 +111,14 @@
 
 * {
   color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 27px;
+  max-width: 1920px;
 }
 
 .bg-image {
@@ -121,15 +129,15 @@
   background: url("/Assets/BgVector.svg") no-repeat, linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
 }
 
-body {
-  overflow-x: hidden;
-  line-height: 27px;
-  max-width: 1920px;
-}
-
-body * {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+.Footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 800px;
+  border-top: 1px solid #707070;
+  padding: 2rem;
+  font-size: 13px;
 }
 
 .sec-01 {
@@ -258,16 +266,5 @@ body * {
   margin: 2rem 0;
   height: 3rem;
   background: linear-gradient(59.46deg, #1C083D 1.6%, #1D4AA0 230.16%);
-}
-
-.Footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  width: 800px;
-  border-top: 1px solid #707070;
-  padding: 2rem;
-  font-size: 13px;
 }
 /*# sourceMappingURL=index.css.map */

@@ -2,16 +2,7 @@
 @import "Assets/Styles/main";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-body {
-    overflow-x: hidden;
-    line-height: 27px;
-    max-width: 1920px;
 
-    * {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-    }
-}
 
 .sec-01 {
 
@@ -146,12 +137,3 @@ body {
     }
 }
 
-.Footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    width: 800px;
-    border-top: 1px solid #707070;
-    padding: 2rem;
-    font-size: 13px;
-}
