@@ -11,16 +11,16 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="index.css" />
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="./Assets/Logo/Icon.ico">
         <title>Funcraft</title>
     </head>
     <body>
         <div class="bg-image"></div>
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top px-5 py-4">
-            <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand fw-bold flex-grow-1" href="#"
-                    >YOTTABYTE</a
-                >
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-4">
+            <div class="container-fluid d-flex justify-content-between"style="margin-top: 20px;">
+                <a class="navbar-brand fw-bold flex-grow-1" href="#"><img src="./Assets/Logo/FunCraftLogo.png" alt="YOTTABYTE" style="width: 100px; margin-left: 30px;"></a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -40,7 +40,7 @@
                         <a class="nav-link active" aria-current="page" href="#"
                             >Home</a
                         >
-                        <a class="nav-link" href="/history">History</a>
+                        <a class="nav-link" href="/history/index.html">History</a>
                         <a class="nav-link" href="#">Developers</a>
                         <a class="nav-link" href="#">Contact Us </a>
                     </div>
@@ -48,117 +48,137 @@
                 <button class="btn btn-primary" href="#">Open App</button>
             </div>
         </nav>
-        <div class="LandingPage">
-            <div class="Description my-auto">
-                <img src="/Assets/FunCraft.svg" alt="" />
-                <p class="Content">
-                    a gamification of task tracker application to increase sales
-                    performance. Made as a business case competition material.
-                </p>
-                <button class="btn btn-primary">Learn More</button>
-            </div>
-            <div class="gallery">
-                <div class="gallery-container">
-                    <img
-                        class="gallery-item gallery-item-1"
-                        src="Assets/Appview/Screen1.png"
-                        data-index="1"
-                    />
-                    <img
-                        class="gallery-item gallery-item-2"
-                        src="Assets/Appview/Screen2.png"
-                        data-index="2"
-                    />
-                    <img
-                        class="gallery-item gallery-item-3"
-                        src="Assets/Appview/Screen3.png"
-                        data-index="3"
-                    />
-                    <img
-                        class="gallery-item gallery-item-4"
-                        src="Assets/Appview/Screen1.png"
-                        data-index="4"
-                    />
-                    <img
-                        class="gallery-item gallery-item-5"
-                        src="Assets/Appview/Screen1.png"
-                        data-index="5"
-                    />
-                </div>
-                <div class="gallery-controls"></div>
-            </div>
-        </div>
-        <div class="Explanation">
-            <div class="ExplanationContainer">
-                <img
-                    class="PlayerIcon"
-                    src="/Assets/Player/Layer 1.png"
-                    alt=""
-                />
-                <h5 class="Title">What the Duck is FunCraft?</h5>
-                <p class="Desc">
-                    We are web-based task tracker application, available for
-                    both mobile and desktop view which purpose is to increase
-                    productivity through a Quest and Reward system.
-                </p>
-            </div>
+        <section class="sec-01">
+            <div class="bgimg01">
 
-            <div class="ExplanationContainer">
-                <img
-                    class="PlayerIcon"
-                    src="/Assets/Player/Layer 1.png"
-                    alt=""
-                />
-                <h5 class="Title">What the Duck is FunCraft?</h5>
-                <p class="Desc">
-                    We are web-based task tracker application, available for
-                    both mobile and desktop view which purpose is to increase
-                    productivity through a Quest and Reward system.
-                </p>
             </div>
-        </div>
-        <div class="HeroArea px-4 py-5 my-5 text-center">
-            <h5>Our Features</h5>
-        </div>
-        <div class="Features">
-            <div class="FeaturesContainer mx-auto">
-                <h5 class="Title">Features That We Provide</h5>
-                <p class="Desc">
-                    We provide many features especially for each company sales
-                    that is just right. From profile gamification, to online
-                    report system from sales to supervisor.
-                </p>
-                <ul class="FeatureList">
-                    <li>Fun Profile Gamification</li>
-                    <li>Monthly Assigned Quest with Details</li>
-                    <li>Monthly Performance Tracker</li>
-                    <li>Performance History</li>
-                    <li>Ranks Between Co-workers</li>
-                    <li>Online File Report</li>
-                </ul>
-                <button class="btn btn-primary">See Our History</button>
+            <div class="LandingPage">
+                <div class="Description my-auto">
+                    <img src="./Assets/Logo/HQFunCraftLogo.png" alt="FunCraft" style="width: 300px;"/>
+                    <p class="Content">
+                        a gamification of task tracker application to increase sales performance and productivity. Made as a business case competition material. 
+                    </p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+                <div class="gallery">
+                    <div class="gallery-container">
+                        <img
+                            class="gallery-item gallery-item-1"
+                            src="Assets/Appview/Screen1.png"
+                            data-index="1"
+                        />
+                        <img
+                            class="gallery-item gallery-item-2"
+                            src="Assets/Appview/Screen2.png"
+                            data-index="2"
+                        />
+                        <img
+                            class="gallery-item gallery-item-3"
+                            src="Assets/Appview/Screen3.png"
+                            data-index="3"
+                        />
+                        <img
+                            class="gallery-item gallery-item-4"
+                            src="Assets/Appview/Screen4.png"
+                            data-index="4"
+                        />
+                        <img
+                            class="gallery-item gallery-item-5"
+                            src="Assets/Appview/Screen5.png"
+                            data-index="5"
+                        />
+                    </div>
+                    <div class="gallery-controls"></div>
+                </div>
             </div>
-        </div>
-        <div class="Footer mx-auto mt-5 px-5">
-            <div class="ReachUs">
-                <h5>Reach Us!</h5>
-                <p>
-                    Yottabyte Team | hitmeup@yottabyte.co.id
-                    <br />
-                    WA +62 0812 9657 5272
-                    <br /><br />
-                    Monday - Friday | 08.00 - 17.00
-                </p>
+        </section>
+        
+        <section class="sec-02">
+            <div class="bgimg02"></div>
+            <div class="Explanation">
+                <div class="ExplanationContainer">
+                    <img
+                        class="PlayerIcon"
+                        src="/Assets/Player/Layer 1.png"
+                        alt=""
+                    />
+                    <h5 class="Title">What the Duck is FunCraft?</h5>
+                    <p class="Desc">
+                        We are web-based task tracker application, available for
+                        both mobile and desktop view which purpose is to increase
+                        productivity through a Quest and Reward system.
+                    </p>
+                </div>
+    
+                <div class="ExplanationContainer">
+                    <img
+                        class="PlayerIcon"
+                        src="/Assets/Player/Layer 2.png"
+                        alt=""
+                    />
+                    <h5 class="Title">Why Choose FunCraft?</h5>
+                    <p class="Desc">
+                        Our system was made to prepare a competitive working area especially for sales through progress tracking and leaderboard ranking. We also provide tons of feature for and efficient and new working experience.
+                    </p>
+                </div>
             </div>
-            <div class="Office">
-                <h5>Our Office</h5>
-                <p>
-                    Fakultas Teknologi Informasi Universitas Tarumanagara <br />
-                    Jl. Letjen S.Parman No. 01, Grogol, Jakarta Barat, 11450
-                    Gedung R Lantai 11
-                </p>
+        </section>
+        
+        <section class="sec-03">
+            <div class="bgimg03">
+                <div class="bgimg03ov"></div>
             </div>
-        </div>
+            <div class="px-4 py-5 my-5 text-center">
+                <h5>Our Features</h5>
+            </div>
+        </section>
+        
+        <section class="sec-04">
+            <div class="bgimg04"></div>
+            <div class="Features">
+                <div class="FeaturesContainer mx-auto">
+                    <h5 class="Title">Features That We Provide</h5>
+                    <p class="Desc">
+                        We provide many features especially for each company sales
+                        that is just right. From profile gamification, to online
+                        report system from sales to supervisor.
+                    </p>
+                    <ul class="FeatureList">
+                        <li>Fun Profile Gamification</li>
+                        <li>Monthly Assigned Quest with Details</li>
+                        <li>Monthly Performance Tracker</li>
+                        <li>Performance History</li>
+                        <li>Ranks Between Co-workers</li>
+                        <li>Online File Report</li>
+                    </ul>
+                    <button class="btn btn-primary">See Our History</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-05">
+            <div class="Footer mx-auto mt-5 px-5">
+                <div class="ReachUs">
+                    <h5>Reach Us!</h5>
+                    <p>
+                        Yottabyte Team | hitmeup@yottabyte.co.id
+                        <br />
+                        WA +62 0812 9657 5272
+                        <br /><br />
+                        Monday - Friday | 08.00 - 17.00
+                    </p>
+                </div>
+                <div class="Office">
+                    <h5>Our Office</h5>
+                    <p>
+                        Fakultas Teknologi Informasi Universitas Tarumanagara <br />
+                        Jl. Letjen S.Parman No. 01, Grogol, Jakarta Barat, 11450
+                        Gedung R Lantai 11
+                    </p>
+                </div>
+            </div>
+        </section>
+ 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
