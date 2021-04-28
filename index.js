@@ -29,4 +29,4 @@ setInterval(function () {
     // do your thing
     exampleCarousel.carouselArray.push(exampleCarousel.carouselArray.shift());
     exampleCarousel.updateGallery();
-}, 2000);
+}, 6000);

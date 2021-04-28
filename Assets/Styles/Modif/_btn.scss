@@ -1,0 +1,12 @@
+.btn-primary {
+    background: linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
+    border-radius: 10px;
+    border: transparent;
+    padding: .5rem 2rem;
+
+    &:hover {
+        background:
+            linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+            linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
+    }
+}

@@ -1,0 +1,31 @@
+.btn-primary {
+  background: linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
+  border-radius: 10px;
+  border: transparent;
+  padding: .5rem 2rem;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
+}
+
+.navbar .nav-link.active {
+  color: #E5A01B !important;
+}
+
+.navbar .nav-link.active:hover {
+  color: #dfcca8 !important;
+}
+
+* {
+  color: #f4f4f4;
+}
+
+.bg-image {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: url("/Assets/BgVector.svg") no-repeat, linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
+}
+/*# sourceMappingURL=index.css.map */

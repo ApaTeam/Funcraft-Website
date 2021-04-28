@@ -1,0 +1,19 @@
+@import "../Assets/Styles/main";
+
+.HeroArea {
+    text-align: center;
+    position: relative;
+    padding-bottom: 2rem;
+
+    &::after {
+        content: '';
+        width: 200px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+}
