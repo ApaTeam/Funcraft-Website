@@ -1,29 +1,60 @@
 @import "Assets/Styles/gallery";
 @import "Assets/Styles/main";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-body{
+body {
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
     line-height: 27px;
     max-width: 1920px;
+
+    * {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+    }
 }
+
+.sec-01 {
+
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-image: url("./Assets/Images/BG-Landing.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
 .LandingPage {
+    padding-top: 2rem;
     height: 100vh;
-    margin-left: 50px;
     display: grid;
     grid-template-columns: 2fr 5fr;
 
     .Description {
-        padding: 10%;
+        padding-left: 5.5rem;
+
+        .Content {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+
+        }
     }
 }
 
 .Explanation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    z-index:10;
-    margin-top: 300px;
+    z-index: 10;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+
 
     .ExplanationContainer {
         width: 350px;
@@ -49,7 +80,41 @@ body{
     }
 }
 
+.HeroArea {
+    $padding-size: 8rem;
+    padding-top: $padding-size;
+    padding-bottom: $padding-size;
+
+    $bg-opacity: 0.4;
+    $bg-color: black;
+    background-image: linear-gradient(0deg, rgba($bg-color, $bg-opacity) 0, rgba($bg-color, $bg-opacity) 100%),
+        url("./Assets/Images/BG-HeroArea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+
+}
+
 .Features {
+    position: relative;
+    padding-top: 5rem;
+
+    &::before {
+        content: "";
+
+        background-image: url("./Assets/Images/BG-Features.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 10vh;
+        z-index: -1;
+    }
+
     .FeaturesContainer {
         width: 450px;
         text-align: center;
@@ -89,51 +154,4 @@ body{
     border-top: 1px solid #707070;
     padding: 2rem;
     font-size: 13px;
-}
-
-.Content{
-    margin: 30px 0 45px 0;
-    width: 450px;
-}
-
-.bgimg01{
-    background-image: url("./Assets/Images/sec01.jpg");
-    background-size: contain;
-    position: absolute;
-    width: 1922px;
-    height: 1280px;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
-.bgimg02{
-    background-image: url("./Assets/Images/sec02.png");
-    width: 1926px;
-    position: absolute;
-    width: 1926px;
-    height: 767.52px;
-    left: 0px;
-    top: 978.48px;
-    z-index: -1;
-}
-.bgimg03{ 
-    background-image: url("./Assets/Images/sec03.jpg");
-    position: absolute;
-    opacity: 0.7;
-    width: 1920px;
-    height: 300px;
-    left: 0px;
-    top: 1746px;
-    z-index: -1;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-.bgimg04{
-    background-image: url("./Assets/Images/sec04.png");
-    position: absolute;
-    left: -5px;
-    top: 2044.95px;
 }

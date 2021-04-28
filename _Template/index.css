@@ -9,20 +9,31 @@
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
 }
 
+.navbar {
+  position: relative;
+  height: 0;
+  padding: 0 !important;
+}
+
+.navbar .nav-container {
+  z-index: 99;
+  position: absolute;
+  padding: 2rem 4rem;
+  top: 0;
+  left: 0;
+}
+
+.navbar .nav-link {
+  padding: 0 2rem !important;
+  color: #f4f4f4;
+}
+
 .navbar .nav-link.active {
   color: #E5A01B !important;
 }
 
 .navbar .nav-link.active:hover {
   color: #dfcca8 !important;
-}
-
-.navbar-nav .nav-link {
-  margin: 0 35px 0 35px;
-}
-
-.navbar-nav .nav-link a {
-  color: #f4f4f4;
 }
 
 * {

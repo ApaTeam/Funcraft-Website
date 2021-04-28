@@ -1,21 +1,27 @@
 .navbar {
+    position: relative;
+    height: 0;
+    padding: 0 !important;
+
+    .nav-container {
+        z-index: 99;
+        position: absolute;
+        padding: 2rem 4rem;
+        top: 0;
+        left: 0;
+
+    }
+
     .nav-link {
+        padding: 0 2rem !important;
+        color: #f4f4f4;
+
         &.active {
             color: #E5A01B !important;
 
             &:hover {
                 color: #dfcca8 !important;
             }
-        }
-    }
-}
-
-.navbar-nav{
-    .nav-link{
-        margin: 0 35px 0 35px;
-        
-        a{
-        color: #f4f4f4;
         }
     }
 }
