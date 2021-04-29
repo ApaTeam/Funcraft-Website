@@ -1,0 +1,285 @@
+.btn-primary {
+  background: linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
+  border-radius: 10px;
+  border: transparent;
+  padding: .5rem 2rem;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
+}
+
+.navbar {
+  position: relative;
+  height: 0;
+  padding: 0 !important;
+}
+
+.navbar .nav-container {
+  z-index: 99;
+  position: absolute;
+  padding: 2rem 4rem;
+  top: 0;
+  left: 0;
+}
+
+.navbar .nav-link {
+  padding: 0 2rem !important;
+  color: #f4f4f4;
+}
+
+.navbar .nav-link.active {
+  color: #E5A01B !important;
+}
+
+.navbar .nav-link.active:hover {
+  color: #dfcca8 !important;
+}
+
+* {
+  color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 27px;
+  max-width: 1920px;
+}
+
+.bg-image {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: url("/Assets/BgVector.svg") no-repeat, linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
+}
+
+.Footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 800px;
+  border-top: 1px solid #707070;
+  padding: 2rem;
+  font-size: 13px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  color: black;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+}
+
+.modal-content .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-content .heading .h5 {
+  font-weight: bold;
+}
+
+.modal-content h5 {
+  color: black;
+}
+
+.modal-content input {
+  color: black;
+  width: 100%;
+}
+
+.modal-content textarea {
+  color: black;
+  width: 100%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.titlearea {
+  padding-top: 8rem;
+  text-align: center;
+  position: relative;
+  height: 40vh;
+  padding-bottom: 2rem;
+}
+
+.titlearea::after {
+  content: '';
+  width: 200px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  top: 12rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.Yottabyteteam {
+  text-align: center;
+}
+
+.Yottabyteteam .teamtitle {
+  color: #A978E6;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.Yottabyteteam p {
+  width: 75vw;
+  padding-left: 25vw;
+}
+
+.thedev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 20vh;
+}
+
+.thedev .picarea {
+  padding: 10px 10px 30px 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#370065), to(#001474));
+  background: linear-gradient(#370065, #001474);
+}
+
+.thedev .picarea img {
+  width: 13rem;
+}
+
+.thedev .nama {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.thedev .nama h6 {
+  margin-bottom: 0;
+}
+
+.thedev .nama p {
+  color: #A978E6;
+}
+
+.thedev .comment {
+  text-align: justify;
+  font-size: 14px;
+  width: 14rem;
+}
+
+.separator {
+  text-align: center;
+  width: 100%;
+  padding: 114px;
+  background-color: #C4C4C4;
+}
+
+.separator h5 {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+}
+
+.separator p {
+  font-size: 20px;
+  color: black;
+}
+
+.display {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.display .bottomtitlearea {
+  padding-top: 20vh;
+  background-image: url("../Assets/Images/BG-Display.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.display .bottomtitlearea p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.35em;
+  padding-bottom: 10vh;
+}
+
+.display .appdisplay {
+  width: 100vw;
+  padding: 0 25vw 10vh 23vw;
+}
+
+.display .btn {
+  margin: 0 40vw;
+}
+/*# sourceMappingURL=index.css.map */
