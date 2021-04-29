@@ -1,0 +1,165 @@
+@import "../Assets/Styles/main";
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    color: black;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    .heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .h5{
+            font-weight: bold;
+        }
+    }
+    h5{
+        color: black;
+    }
+    input{
+        color: black;
+        width: 100%;
+    }
+    textarea{
+        color: black;
+        width: 100%;
+    }
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+.titlearea{
+    padding-top: 6rem + 2rem;
+    text-align: center;
+    position: relative;
+    height: 40vh;
+    padding-bottom: 2rem;
+    &::after {
+        content: '';
+        width: 200px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        position: absolute;
+        left: 50%;
+        top: 8rem + 4rem; // 8rem dari paddingnya
+        transform: translateX(-50%);
+    }
+}
+.Yottabyteteam{
+    text-align: center;
+    .teamtitle{
+        color: #A978E6;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    p{
+        width: 75vw;
+        padding-left: 25vw;
+    }
+}
+.thedev{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20vh;
+    .picarea{
+        padding: 10px 10px 30px 10px;
+        background: linear-gradient(#370065, #001474);
+        img{
+            width: 13rem;
+        }
+    }
+    .nama{
+        padding-top: 40px;
+        text-align: center;
+        h6{
+            margin-bottom: 0;
+        }
+        p{
+            color: #A978E6;
+        }
+    }
+    .comment{
+        text-align: justify;
+        font-size: 14px;
+        width: 14rem;
+    }
+}
+.separator{
+    text-align: center;
+    width: 100%;
+    padding: 114px;
+    background-color: #C4C4C4;
+    h5{
+        font-weight: bold;
+        font-size: 24px;
+        color: black;
+    }
+    p{
+        font-size: 20px;
+        color: black;
+    }
+}
+.display{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .bottomtitlearea{
+        padding-top: 20vh;
+        background-image: url("../Assets/Images/BG-Display.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        p{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+    
+            text-align: center;
+            letter-spacing: 0.35em;
+            padding-bottom: 10vh;
+        }
+    }
+    .appdisplay{
+        width: 100vw;
+        padding: 0 25vw 10vh 23vw;
+    }
+    .btn{
+        margin: 0 40vw;
+        
+    }
+}
