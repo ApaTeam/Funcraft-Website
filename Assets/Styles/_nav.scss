@@ -2,7 +2,7 @@
     position: relative;
     height: 0;
     padding: 0 !important;
-    
+
     .nav-container {
         z-index: 99;
         position: absolute;
@@ -10,6 +10,11 @@
         top: 0;
         left: 0;
 
+        .MobContainer {
+            display: inline;
+            display: flex;
+            align-items: center;
+        }
     }
 
     .nav-link {
@@ -26,10 +31,30 @@
             }
         }
     }
-
-
 }
 
+
+
+@media screen and (max-device-width: 490px) {
+
+    .nav-container {
+        z-index: 99;
+        position: absolute;
+        padding: 1rem 2rem 2rem 2rem !important;
+        top: 0;
+        left: 0;
+
+        .MobContainer {
+            display: inline;
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+}
 
 @media screen and (max-device-width: 991px) {
     .navbar-nav {
