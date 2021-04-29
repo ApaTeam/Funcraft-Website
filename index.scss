@@ -43,7 +43,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     z-index: 10;
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-bottom: 5vh;
 
 
@@ -84,8 +84,6 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-
-
 }
 
 .Features {
@@ -96,7 +94,6 @@
         content: "";
 
         background-image: url("./Assets/Images/BG-Features.png");
-        background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
         left: 0;
@@ -109,6 +106,7 @@
     .FeaturesContainer {
         width: 450px;
         text-align: center;
+        margin-top: 30px;
 
         .Title {
             margin-bottom: 30px;
@@ -133,6 +131,9 @@
                 height: 3rem;
                 background: linear-gradient(59.46deg, #1C083D 1.6%, #1D4AA0 230.16%);
             }
+        }
+        button{
+            margin: 40px 0 50px 0;
         }
     }
 }

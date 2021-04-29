@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 .btn-primary {
   background: linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
   border-radius: 10px;
@@ -13,6 +14,8 @@
   position: relative;
   height: 0;
   padding: 0 !important;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .navbar .nav-container {
@@ -40,6 +43,7 @@
   color: #f4f4f4;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,7 +57,7 @@ body {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background: url("/Assets/BgVector.svg") no-repeat, linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
+  background: linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
 }
 
 .Footer {
@@ -67,8 +71,20 @@ body {
   font-size: 13px;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #f4f4f4;
+}
+
+.bg-image {
+  background-image: url("../Assets/Images/BG-History.png");
+  background-size: cover;
+  position: absolute;
+}
+
 .HeroArea {
-  padding-top: 8rem;
+  padding-top: 13rem;
   text-align: center;
   position: relative;
   height: 40vh;
@@ -77,18 +93,34 @@ body {
 
 .HeroArea::after {
   content: '';
-  width: 200px;
+  width: 65px;
   height: 3px;
   background-color: white;
   border-radius: 3px;
   position: absolute;
   left: 50%;
-  top: 18rem;
+  top: 21.5rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
+.HeroArea h6 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 12px;
+  margin-bottom: 20px;
+}
+
+.HeroArea .History {
+  margin-top: 200px;
+}
+
+.HeroArea img {
+  width: 250px;
+}
+
 .HowItHappen {
+  margin-top: 17rem;
   max-width: 900px;
   text-align: center;
   -webkit-box-align: center;
@@ -99,15 +131,19 @@ body {
 
 .HowItHappen .Title {
   margin-bottom: 2rem;
+  font-size: 24px;
 }
 
 .HowItHappen .PhoneImage {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: rem;
 }
 
 .HowItHappen .Description {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 450px;
+  margin: 50px auto 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #f4f4f4;
 }
 /*# sourceMappingURL=index.css.map */
