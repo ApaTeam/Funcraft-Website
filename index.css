@@ -396,6 +396,13 @@ body {
   }
 }
 
+@media screen and (max-device-width: 450px) {
+  .LandingPage .Description {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
 @media screen and (max-device-width: 350px) {
   .Explanation .ExplanationContainer {
     width: 100%;

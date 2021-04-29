@@ -310,7 +310,7 @@ body {
 .separator {
   text-align: center;
   width: 100%;
-  padding: 100px 0 85px 0;
+  padding: 100px 2rem 85px 2rem;
   background-color: #afafaf;
 }
 
@@ -368,5 +368,34 @@ body {
 .display .btn {
   width: 180px;
   margin: 80px auto;
+}
+
+@media screen and (max-device-width: 1000px) {
+  .thedev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .thedev > * {
+    width: 296px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-device-width: 900px) {
+  .display .appdisplay {
+    width: 100%;
+  }
+}
+
+@media screen and (max-device-width: 510px) {
+  .Yottabyteteam p {
+    width: 100%;
+    padding: 0 2rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
