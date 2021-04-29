@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 .btn-primary {
   background: linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
   border-radius: 10px;
@@ -25,7 +26,9 @@
 
 .navbar .nav-link {
   padding: 0 2rem !important;
-  color: #f4f4f4;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .navbar .nav-link.active {
@@ -40,6 +43,7 @@
   color: #f4f4f4;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,7 +57,7 @@ body {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background: url("/Assets/BgVector.svg") no-repeat, linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
+  background: linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
 }
 
 .Footer {

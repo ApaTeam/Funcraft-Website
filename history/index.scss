@@ -5,12 +5,14 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: #f4f4f4;
+    scroll-behavior: smooth;
 }
 .bg-image{
     background-image: url('../Assets/Images/BG-History.png');
     background-size: cover;
     position: absolute;
-
+    height: 1920px;
+    max-width: 1920px;
 }
 .HeroArea {
     padding-top: 6rem + 7rem; // 6rem dari navbar
@@ -62,7 +64,7 @@ body{
 
     .PhoneImage {
         margin-top: 2rem;
-        margin-bottom: rem;
+        margin-bottom: 1rem;
     }
 
     .Description {
