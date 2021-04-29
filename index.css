@@ -204,6 +204,8 @@ body {
   display: grid;
   -ms-grid-columns: 2fr 5fr;
       grid-template-columns: 2fr 5fr;
+  -ms-grid-rows: 9fr 1fr;
+      grid-template-rows: 9fr 1fr;
 }
 
 .LandingPage .Description {
@@ -213,6 +215,31 @@ body {
 .LandingPage .Description .Content {
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+
+.LandingPage .Watermark {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  padding: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.LandingPage .Watermark h5 {
+  font-size: 1rem;
+}
+
+.LandingPage .Watermark .EndDesc {
+  max-width: 300px;
+  text-align: end;
 }
 
 .Explanation {
