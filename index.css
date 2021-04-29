@@ -356,12 +356,19 @@ a {
   background: linear-gradient(59.46deg, #1C083D 1.6%, #1D4AA0 230.16%);
 }
 
-.Features .FeaturesContainer .FeatureList .card {
+.Features .FeaturesContainer .FeatureList .card-body {
   background-color: rgba(0, 0, 0, 0.4);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.Features .FeaturesContainer .FeatureList .picturess {
-  width: 50px;
+.Features .FeaturesContainer .FeatureList .card-body .picturess {
+  margin-bottom: 1rem;
+}
+
+.Features .FeaturesContainer .FeatureList .card-body .picturess img {
+  max-width: 100%;
 }
 
 .Features .FeaturesContainer .btn {
@@ -385,6 +392,13 @@ a {
   }
 }
 
+@media screen and (max-device-height: 1000px) {
+  .Explanation {
+    padding-top: 25rem;
+    padding-bottom: 5rem;
+  }
+}
+
 @media screen and (max-device-width: 810px) {
   .Explanation {
     display: -webkit-box;
@@ -394,33 +408,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media screen and (max-device-width: 550px) {
-  .Features .FeaturesContainer {
-    width: 100%;
-  }
-  .Features .FeaturesContainer .Desc {
-    width: 100%;
-    padding: 1rem;
-  }
-}
-
-@media screen and (max-device-width: 450px) {
-  .LandingPage .Description {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-}
-
-@media screen and (max-device-width: 350px) {
-  .Explanation .ExplanationContainer {
-    width: 100%;
-  }
-  .Explanation .ExplanationContainer .Desc {
-    width: 100%;
-    padding: 1rem;
   }
 }
 
@@ -450,10 +437,30 @@ a {
   }
 }
 
-@media screen and (max-device-height: 1000px) {
-  .Explanation {
-    padding-top: 25rem;
-    padding-bottom: 5rem;
+@media screen and (max-device-width: 550px) {
+  .Features .FeaturesContainer {
+    width: 100%;
+  }
+  .Features .FeaturesContainer .Desc {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-device-width: 450px) {
+  .LandingPage .Description {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media screen and (max-device-width: 350px) {
+  .Explanation .ExplanationContainer {
+    width: 100%;
+  }
+  .Explanation .ExplanationContainer .Desc {
+    width: 100%;
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
