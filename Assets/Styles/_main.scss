@@ -7,12 +7,13 @@
     font-weight: 200;
 }
 
+
+
 body {
     overflow-x: hidden;
     line-height: 27px;
     max-width: 1920px;
-
-
+    margin: 0 auto;
 }
 
 .bg-image {
@@ -37,4 +38,12 @@ body {
     border-top: 1px solid #707070;
     padding: 2rem;
     font-size: 13px;
+}
+
+@media screen and (max-device-width: 810px) {
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        max-width: 410px;
+    }
 }

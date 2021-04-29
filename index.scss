@@ -5,7 +5,6 @@
 
 
 .sec-01 {
-
     position: relative;
 
     &::before {
@@ -125,6 +124,7 @@
 
         .FeatureList {
             list-style: none;
+            padding: 0 1rem;
 
             li {
                 display: grid;
@@ -137,3 +137,58 @@
     }
 }
 
+@media screen and (max-device-width: 970px) {
+    .LandingPage {
+        padding-top: 8rem;
+        display: flex;
+        flex-direction: column;
+
+        .Description {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+@media screen and (max-device-width: 810px) {
+    .Explanation {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-device-width: 550px) {
+
+
+    .Explanation {
+
+        .ExplanationContainer {
+
+            .Desc {
+                max-width: 350px;
+                padding: 1rem;
+            }
+        }
+    }
+
+    .Features {
+        .FeaturesContainer {
+            width: 100%;
+
+            .Desc {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-device-height: 1000px) {
+
+    .Explanation {
+        padding-top: 25rem;
+        padding-bottom: 5rem;
+    }
+}

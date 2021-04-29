@@ -109,6 +109,32 @@
   color: #dfcca8 !important;
 }
 
+@media screen and (max-device-width: 991px) {
+  .navbar-nav {
+    background-color: #1C083D;
+    margin: 1rem 0;
+  }
+  .navbar-nav .nav-link {
+    padding: 1rem !important;
+  }
+  .DeskOpenApp {
+    display: none;
+  }
+  .MobOpenApp {
+    display: block;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-device-width: 992px) {
+  .DeskOpenApp {
+    display: block;
+  }
+  .MobOpenApp {
+    display: none;
+  }
+}
+
 * {
   color: #f4f4f4;
   font-family: 'Poppins', sans-serif;
@@ -119,6 +145,7 @@ body {
   overflow-x: hidden;
   line-height: 27px;
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 .bg-image {
@@ -138,6 +165,19 @@ body {
   border-top: 1px solid #707070;
   padding: 2rem;
   font-size: 13px;
+}
+
+@media screen and (max-device-width: 810px) {
+  .Footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 410px;
+  }
 }
 
 .sec-01 {
@@ -257,6 +297,7 @@ body {
 
 .Features .FeaturesContainer .FeatureList {
   list-style: none;
+  padding: 0 1rem;
 }
 
 .Features .FeaturesContainer .FeatureList li {
@@ -266,5 +307,55 @@ body {
   margin: 2rem 0;
   height: 3rem;
   background: linear-gradient(59.46deg, #1C083D 1.6%, #1D4AA0 230.16%);
+}
+
+@media screen and (max-device-width: 970px) {
+  .LandingPage {
+    padding-top: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .LandingPage .Description {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-device-width: 810px) {
+  .Explanation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-device-width: 550px) {
+  .Explanation .ExplanationContainer .Desc {
+    max-width: 350px;
+    padding: 1rem;
+  }
+  .Features .FeaturesContainer {
+    width: 100%;
+  }
+  .Features .FeaturesContainer .Desc {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-device-height: 1000px) {
+  .Explanation {
+    padding-top: 25rem;
+    padding-bottom: 5rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
