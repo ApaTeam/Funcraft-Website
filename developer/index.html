@@ -23,17 +23,18 @@
             <div
                 class="container-fluid d-flex justify-content-between nav-container"
             >
-                <a class="navbar-brand fw-bold flex-grow-1" href="#"
+                <a class="navbar-brand fw-bold flex-grow-1" href="../index.html"
                     ><img
                         src="../Assets/Logo/FunCraftLogo.png"
                         alt="YOTTABYTE"
                         style="width: 100px; margin-left: 30px"
                 /></a>
-                <a
+                <button
                     class="btn btn-primary MobOpenApp"
-                    href="https://funcraft.netlify.app/"
-                    >Open App</a
+                    onclick="ToFunCraft()"
                 >
+                    Open App
+                </button>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -54,20 +55,18 @@
                         <a class="nav-link" href="../history/index.html"
                             >History</a
                         >
-                        <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="../developer/index.html"
+                        <a class="nav-link active" aria-current="page" href="#"
                             >Developers</a
                         >
                         <a class="nav-link" href="#ContactUs">Contact Us</a>
                     </div>
                 </div>
-                <a
+                <button
                     class="btn btn-primary DeskOpenApp"
-                    href="https://funcraft.netlify.app/"
-                    >Open App</a
+                    onclick="ToFunCraft()"
                 >
+                    Open App
+                </button>
             </div>
         </nav>
 
@@ -206,5 +205,6 @@
             crossorigin="anonymous"
         ></script>
         <script src="index.js"></script>
+        <script src="../Assets/main.js"></script>
     </body>
 </html>
