@@ -140,7 +140,7 @@
 * {
   color: #f4f4f4;
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   scroll-behavior: smooth;
 }
 
@@ -160,14 +160,24 @@ body {
 }
 
 .Footer {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   width: 800px;
-  border-top: 1px solid #707070;
-  padding: 2rem;
+  padding: 2rem !important;
   font-size: 13px;
+}
+
+.Footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  background-color: #707070;
+  height: 1px;
 }
 
 @media screen and (max-device-width: 810px) {
@@ -179,7 +189,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 410px;
+    width: 100%;
   }
 }
 
@@ -245,7 +255,7 @@ a {
 }
 
 .LandingPage .Watermark .EndDesc {
-  max-width: 300px;
+  width: 300px;
   text-align: end;
 }
 
@@ -370,8 +380,8 @@ a {
             flex-direction: column;
   }
   .LandingPage .Description {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 }
 
@@ -388,16 +398,55 @@ a {
 }
 
 @media screen and (max-device-width: 550px) {
-  .Explanation .ExplanationContainer .Desc {
-    max-width: 350px;
-    padding: 1rem;
-  }
   .Features .FeaturesContainer {
     width: 100%;
   }
   .Features .FeaturesContainer .Desc {
     width: 100%;
     padding: 1rem;
+  }
+}
+
+@media screen and (max-device-width: 450px) {
+  .LandingPage .Description {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media screen and (max-device-width: 350px) {
+  .Explanation .ExplanationContainer {
+    width: 100%;
+  }
+  .Explanation .ExplanationContainer .Desc {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-device-width: 650px) {
+  .LandingPage .Watermark {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    padding: 0 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .LandingPage .Watermark h5 {
+    font-size: 1rem;
+  }
+  .LandingPage .Watermark .EndDesc {
+    width: 100%;
+    text-align: start;
   }
 }
 

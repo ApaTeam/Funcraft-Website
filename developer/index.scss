@@ -3,63 +3,78 @@
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
     background-color: #fefefe;
     color: black;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-    .heading{
+    width: 50%;
+
+    /* Could be more or less, depending on screen size */
+    .heading {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .h5{
+
+        .h5 {
             font-weight: bold;
         }
     }
-    h5{
+
+    h5 {
         color: black;
     }
-    input{
+
+    input {
         color: black;
         width: 100%;
     }
-    textarea{
+
+    textarea {
         color: black;
         width: 100%;
     }
 }
-  
-  /* The Close Button */
-  .close {
+
+/* The Close Button */
+.close {
     color: #aaa;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 
-.titlearea{
+.titlearea {
     background-image: url("../Assets/Images/BG-Developer01.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,117 +95,169 @@
         top: 8rem + 10.5rem; // 8rem dari paddingnya
         transform: translateX(-50%);
     }
-    h4{
+
+    h4 {
         margin-top: 100px;
         font-size: 30px;
         font-weight: 500;
     }
 }
-.Yottabyteteam{
+
+.Yottabyteteam {
     margin-top: 3rem;
     max-width: 500px;
     text-align: center;
     align-items: center;
     padding-bottom: 5rem;
 
-    .teamtitle{
+    .teamtitle {
         color: #A978E6;
         font-weight: 600;
         margin-bottom: 45px;
         font-size: 28px;
     }
-    p{
+
+    p {
         width: 495px;
         font-size: 14px;
     }
 }
-.thedev{
+
+.thedev {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 22vh;
 
-    .picarea{
+    .picarea {
         border-radius: 5px;
         padding: 20px 20px 70px 20px;
         background: linear-gradient(#370065, #001474);
-        img{
+
+        img {
             width: 16rem;
         }
     }
-    .nama{
+
+    .nama {
         padding-top: 40px;
         text-align: center;
-        h6{
+
+        h6 {
             margin-bottom: 0;
             font-size: 18px;
             font-weight: 400;
         }
-        p{
+
+        p {
             color: #A978E6;
             font-size: 14px;
             font-weight: 300;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
     }
-    .comment{
+
+    .comment {
         text-align: justify;
-        font-size: 14px;    
+        font-size: 14px;
         font-weight: 200;
         font-style: italic;
         width: 18rem;
     }
 }
-.separator{
+
+.separator {
     text-align: center;
     width: 100%;
-    padding: 100px 0 85px 0;
+    padding: 100px 2rem 85px 2rem;
     background-color: #afafaf;
-    h5{
+
+    h5 {
         font-weight: 600;
         font-size: 24px;
         color: #1f1f1f;
     }
-    p{
+
+    p {
         font-size: 20px;
         color: black;
         font-weight: 400;
         margin-top: 20px;
     }
 }
-.display{
+
+.display {
     background-image: url("../Assets/Images/BG-Display.png");
     background-repeat: no-repeat;
     text-align: center;
     display: flex;
     flex-direction: column;
-    img{
+
+    img {
         width: 180px;
     }
-    .bottomtitlearea{
+
+    .bottomtitlearea {
         padding-top: 10vh;
-        p{
+
+        p {
             margin-top: 15px;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 21px;
             /* identical to box height */
-    
+
             text-align: center;
             letter-spacing: 0.25em;
             padding-bottom: 10vh;
         }
     }
-    .appdisplay{
+
+    .appdisplay {
         width: 900px;
         margin: auto;
     }
-    .btn{
+
+    .btn {
         width: 180px;
         margin: 80px auto;
 
+    }
+}
+
+
+
+@media screen and (max-device-width: 1000px) {
+    .thedev {
+        flex-direction: column;
+        align-items: center;
+
+        >* {
+            width: 296px;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media screen and (max-device-width: 900px) {
+    .display {
+        .appdisplay {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-device-width: 510px) {
+
+    .Yottabyteteam {
+        p {
+            width: 100%;
+
+            padding: 0 2rem;
+        }
     }
 }

@@ -1,19 +1,13 @@
 @import "../Assets/Styles/main";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-body{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    color: #f4f4f4;
-    scroll-behavior: smooth;
-}
-.bg-image{
-    background-image: url('../Assets/Images/BG-History.png');
+.WithBg {
+    background-image: url('../Assets/Images/BG-History-Cropped.png');
     background-size: cover;
-    position: absolute;
-    height: 1920px;
     max-width: 1920px;
+    background-position: center;
 }
+
 .HeroArea {
     padding-top: 6rem + 7rem; // 6rem dari navbar
     text-align: center;
@@ -34,17 +28,18 @@ body{
         transform: translateX(-50%);
     }
 
-    h6{
+    h6 {
         font-size: 18px;
         font-weight: 400;
         letter-spacing: 12px;
         margin-bottom: 20px;
     }
-    .History{
+
+    .History {
         margin-top: 200px;
     }
 
-    img{
+    img {
         width: 250px;
     }
 }
@@ -75,3 +70,17 @@ body{
         color: #f4f4f4;
     }
 }
+
+@media screen and (max-device-width: 900px) {
+
+    .HowItHappen {
+        padding: 0 2rem 5rem 2rem;
+
+        .PhoneImage {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+    }
+}
+

@@ -36,7 +36,6 @@ a{
         .Content {
             margin-top: 2rem;
             margin-bottom: 3rem;
-
         }
     }
 
@@ -52,7 +51,7 @@ a{
         }
 
         .EndDesc {
-            max-width: 300px;
+            width: 300px;
             text-align: end;
         }
     }
@@ -64,7 +63,6 @@ a{
     z-index: 10;
     padding-top: 20vh;
     padding-bottom: 5vh;
-
 
     .ExplanationContainer {
         width: 350px;
@@ -151,16 +149,17 @@ a{
                 height: 3rem;
                 background: linear-gradient(59.46deg, #1C083D 1.6%, #1D4AA0 230.16%);
             }
-            
-            .card{
-                background-color: rgba(0,0,0, 0.4);
+
+            .card {
+                background-color: rgba(0, 0, 0, 0.4);
             }
 
             .picturess{
                 width: 50px;
             }
         }
-        .btn{
+
+        .btn {
             margin: 40px 0 50px 0;
         }
     }
@@ -173,8 +172,8 @@ a{
         flex-direction: column;
 
         .Description {
-            padding-left: 1rem;
-            padding-right: 1rem;
+            padding-left: 5rem !important;
+            padding-right: 5rem !important;
         }
     }
 }
@@ -184,23 +183,10 @@ a{
         display: flex;
         flex-direction: column;
     }
-
 }
 
 
 @media screen and (max-device-width: 550px) {
-
-
-    .Explanation {
-
-        .ExplanationContainer {
-
-            .Desc {
-                max-width: 350px;
-                padding: 1rem;
-            }
-        }
-    }
 
     .Features {
         .FeaturesContainer {
@@ -214,8 +200,54 @@ a{
     }
 }
 
-@media screen and (max-device-height: 1000px) {
+@media screen and (max-device-width: 450px) {
+    .LandingPage {
+        .Description {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+    }
+}
 
+@media screen and (max-device-width: 350px) {
+
+    .Explanation {
+        .ExplanationContainer {
+            width: 100%;
+
+            .Desc {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-device-width: 650px) {
+
+    .LandingPage {
+
+        .Watermark {
+            grid-column: 1 / 3;
+            padding: 0 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h5 {
+                font-size: 1rem;
+            }
+
+            .EndDesc {
+                width: 100%;
+                text-align: start;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-device-height: 1000px) {
     .Explanation {
         padding-top: 25rem;
         padding-bottom: 5rem;
