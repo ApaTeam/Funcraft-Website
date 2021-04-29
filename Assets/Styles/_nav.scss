@@ -2,7 +2,7 @@
     position: relative;
     height: 0;
     padding: 0 !important;
-
+    
     .nav-container {
         z-index: 99;
         position: absolute;
@@ -14,7 +14,9 @@
 
     .nav-link {
         padding: 0 2rem !important;
-        color: #f4f4f4;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 16px;
 
         &.active {
             color: #E5A01B !important;

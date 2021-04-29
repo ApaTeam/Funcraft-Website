@@ -1,8 +1,21 @@
 @import "../Assets/Styles/main";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+.bg-image{
+    background-image: url('../Assets/Images/BG-History.png');
+    background-size: cover;
+    position: absolute;
+    height: 1920px;
+    max-width: 1920px;
+}
 .HeroArea {
-    padding-top: 6rem + 2rem; // 6rem dari navbar
+    padding-top: 6rem + 7rem; // 6rem dari navbar
     text-align: center;
     position: relative;
     height: 40vh;
@@ -11,18 +24,34 @@
     //garis putih
     &::after {
         content: '';
-        width: 200px;
+        width: 65px;
         height: 3px;
         background-color: white;
         border-radius: 3px;
         position: absolute;
         left: 50%;
-        top: 8rem + 10rem; // 8rem dari paddingnya
+        top: 8rem + 13.5rem; // 8rem dari paddingnya
         transform: translateX(-50%);
+    }
+
+    h6{
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 12px;
+        margin-bottom: 20px;
+    }
+    .History{
+        margin-top: 200px;
+    }
+
+    img{
+        width: 250px;
     }
 }
 
+
 .HowItHappen {
+    margin-top: 17rem;
     max-width: 900px;
     text-align: center;
     align-items: center;
@@ -30,15 +59,19 @@
 
     .Title {
         margin-bottom: 2rem;
+        font-size: 24px;
     }
 
     .PhoneImage {
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .Description {
-        max-width: 500px;
-        margin: 0 auto;
+        max-width: 450px;
+        margin: 50px auto 0 auto;
+        font-size: 14px;
+        font-weight: 300;
+        color: #f4f4f4;
     }
 }

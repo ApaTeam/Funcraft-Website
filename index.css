@@ -98,7 +98,9 @@
 
 .navbar .nav-link {
   padding: 0 2rem !important;
-  color: #f4f4f4;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .navbar .nav-link.active {
@@ -139,6 +141,7 @@
   color: #f4f4f4;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -153,7 +156,7 @@ body {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background: url("/Assets/BgVector.svg") no-repeat, linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
+  background: linear-gradient(349.3deg, #000000 -4.62%, rgba(29, 0, 89, 0.45) 88.46%), linear-gradient(344.94deg, #000000 45.74%, rgba(18, 0, 56, 0.16) 129.77%), #000000;
 }
 
 .Footer {
@@ -248,7 +251,7 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   z-index: 10;
-  padding-top: 15vh;
+  padding-top: 20vh;
   padding-bottom: 5vh;
 }
 
@@ -294,7 +297,6 @@ body {
 .Features::before {
   content: "";
   background-image: url("./Assets/Images/BG-Features.png");
-  background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   left: 0;
@@ -307,6 +309,7 @@ body {
 .Features .FeaturesContainer {
   width: 450px;
   text-align: center;
+  margin-top: 30px;
 }
 
 .Features .FeaturesContainer .Title {
@@ -334,6 +337,10 @@ body {
   margin: 2rem 0;
   height: 3rem;
   background: linear-gradient(59.46deg, #1C083D 1.6%, #1D4AA0 230.16%);
+}
+
+.Features .FeaturesContainer button {
+  margin: 40px 0 50px 0;
 }
 
 @media screen and (max-device-width: 970px) {
