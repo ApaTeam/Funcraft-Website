@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 .btn-primary {
   background: linear-gradient(247.7deg, #1E34FD -73.17%, #A155FF 64.31%);
   border-radius: 10px;
@@ -191,39 +192,55 @@ body {
 }
 
 .titlearea {
+  background-image: url("../Assets/Images/BG-Developer01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 8rem;
   text-align: center;
   position: relative;
-  height: 40vh;
+  height: 43rem;
   padding-bottom: 2rem;
 }
 
 .titlearea::after {
   content: '';
-  width: 200px;
+  width: 65px;
   height: 3px;
   background-color: white;
   border-radius: 3px;
   position: absolute;
   left: 50%;
-  top: 12rem;
+  top: 18.5rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
+.titlearea h4 {
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .Yottabyteteam {
+  margin-top: 3rem;
+  max-width: 500px;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5rem;
 }
 
 .Yottabyteteam .teamtitle {
   color: #A978E6;
-  font-weight: bold;
-  margin-bottom: 30px;
+  font-weight: 600;
+  margin-bottom: 45px;
+  font-size: 28px;
 }
 
 .Yottabyteteam p {
-  width: 75vw;
-  padding-left: 25vw;
+  width: 495px;
+  font-size: 14px;
 }
 
 .thedev {
@@ -237,17 +254,18 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-bottom: 20vh;
+  margin-bottom: 22vh;
 }
 
 .thedev .picarea {
-  padding: 10px 10px 30px 10px;
+  border-radius: 5px;
+  padding: 20px 20px 70px 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#370065), to(#001474));
   background: linear-gradient(#370065, #001474);
 }
 
 .thedev .picarea img {
-  width: 13rem;
+  width: 16rem;
 }
 
 .thedev .nama {
@@ -257,37 +275,51 @@ body {
 
 .thedev .nama h6 {
   margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .thedev .nama p {
   color: #A978E6;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.thedev .nama a {
+  text-decoration: none;
 }
 
 .thedev .comment {
   text-align: justify;
   font-size: 14px;
-  width: 14rem;
+  font-weight: 200;
+  font-style: italic;
+  width: 18rem;
 }
 
 .separator {
   text-align: center;
   width: 100%;
-  padding: 114px;
-  background-color: #C4C4C4;
+  padding: 100px 0 85px 0;
+  background-color: #afafaf;
 }
 
 .separator h5 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 24px;
-  color: black;
+  color: #1f1f1f;
 }
 
 .separator p {
   font-size: 20px;
   color: black;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
 .display {
+  background-image: url("../Assets/Images/BG-Display.png");
+  background-repeat: no-repeat;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,32 +330,33 @@ body {
           flex-direction: column;
 }
 
+.display img {
+  width: 180px;
+}
+
 .display .bottomtitlearea {
-  padding-top: 20vh;
-  background-image: url("../Assets/Images/BG-Display.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+  padding-top: 10vh;
 }
 
 .display .bottomtitlearea p {
-  font-family: Poppins;
+  margin-top: 15px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 21px;
   /* identical to box height */
   text-align: center;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.25em;
   padding-bottom: 10vh;
 }
 
 .display .appdisplay {
-  width: 100vw;
-  padding: 0 25vw 10vh 23vw;
+  width: 900px;
+  margin: auto;
 }
 
 .display .btn {
-  margin: 0 40vw;
+  width: 180px;
+  margin: 80px auto;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,6 @@
 @import "Assets/Styles/gallery";
 @import "Assets/Styles/main";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 
 
 
@@ -26,6 +26,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 5fr;
+    grid-template-rows: 9fr 1fr;
 
     .Description {
         padding-left: 5.5rem;
@@ -34,6 +35,23 @@
             margin-top: 2rem;
             margin-bottom: 3rem;
 
+        }
+    }
+
+    .Watermark {
+        grid-column: 1 / 3;
+        padding: 0 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h5 {
+            font-size: 1rem;
+        }
+
+        .EndDesc {
+            max-width: 300px;
+            text-align: end;
         }
     }
 }
@@ -136,7 +154,7 @@
                 background-color: rgba(0,0,0, 0.4);
             }
         }
-        button{
+        .btn{
             margin: 40px 0 50px 0;
         }
     }
