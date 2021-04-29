@@ -39,6 +39,32 @@
   color: #dfcca8 !important;
 }
 
+@media screen and (max-device-width: 991px) {
+  .navbar-nav {
+    background-color: #1C083D;
+    margin: 1rem 0;
+  }
+  .navbar-nav .nav-link {
+    padding: 1rem !important;
+  }
+  .DeskOpenApp {
+    display: none;
+  }
+  .MobOpenApp {
+    display: block;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-device-width: 992px) {
+  .DeskOpenApp {
+    display: block;
+  }
+  .MobOpenApp {
+    display: none;
+  }
+}
+
 * {
   color: #f4f4f4;
   font-family: 'Poppins', sans-serif;
@@ -50,6 +76,7 @@ body {
   overflow-x: hidden;
   line-height: 27px;
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 .bg-image {
@@ -69,6 +96,19 @@ body {
   border-top: 1px solid #707070;
   padding: 2rem;
   font-size: 13px;
+}
+
+@media screen and (max-device-width: 810px) {
+  .Footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 410px;
+  }
 }
 
 body {
