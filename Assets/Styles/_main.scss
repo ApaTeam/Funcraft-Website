@@ -5,10 +5,9 @@
 * {
     color: #f4f4f4;
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     scroll-behavior: smooth;
 }
-
 
 
 body {
@@ -32,12 +31,26 @@ body {
 }
 
 .Footer {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+
+        left: 10%;
+        width: 80%;
+
+        background-color: #707070;
+        height: 1px;
+
+    }
+
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     width: 800px;
-    border-top: 1px solid #707070;
-    padding: 2rem;
+
+    padding: 2rem !important;
     font-size: 13px;
 }
 
@@ -45,6 +58,6 @@ body {
     .Footer {
         display: flex;
         flex-direction: column;
-        max-width: 410px;
+        width: 100%;
     }
 }
