@@ -2,7 +2,9 @@
 @import "Assets/Styles/main";
 
 
-
+a{
+    text-decoration: none;
+}
 
 .sec-01 {
     position: relative;
@@ -141,7 +143,7 @@
         .FeatureList {
             list-style: none;
             padding: 0 1rem;
-
+            align-items: center;
             li {
                 display: grid;
                 place-items: center;
@@ -152,6 +154,10 @@
             
             .card{
                 background-color: rgba(0,0,0, 0.4);
+            }
+
+            .picturess{
+                width: 50px;
             }
         }
         .btn{

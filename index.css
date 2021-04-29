@@ -183,6 +183,10 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .sec-01 {
   position: relative;
 }
@@ -328,6 +332,9 @@ body {
 .Features .FeaturesContainer .FeatureList {
   list-style: none;
   padding: 0 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Features .FeaturesContainer .FeatureList li {
@@ -341,6 +348,10 @@ body {
 
 .Features .FeaturesContainer .FeatureList .card {
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Features .FeaturesContainer .FeatureList .picturess {
+  width: 50px;
 }
 
 .Features .FeaturesContainer .btn {
