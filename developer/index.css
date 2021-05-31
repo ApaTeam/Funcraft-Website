@@ -265,7 +265,7 @@ body {
   font-weight: 500;
 }
 
-.Yottabyteteam {
+.Apateam {
   margin-top: 3rem;
   max-width: 500px;
   text-align: center;
@@ -275,14 +275,14 @@ body {
   padding-bottom: 5rem;
 }
 
-.Yottabyteteam .teamtitle {
+.Apateam .teamtitle {
   color: #A978E6;
   font-weight: 600;
   margin-bottom: 45px;
   font-size: 28px;
 }
 
-.Yottabyteteam p {
+.Apateam p {
   width: 495px;
   font-size: 14px;
 }
@@ -427,7 +427,7 @@ body {
 }
 
 @media screen and (max-device-width: 510px) {
-  .Yottabyteteam p {
+  .Apateam p {
     width: 100%;
     padding: 0 2rem;
   }
